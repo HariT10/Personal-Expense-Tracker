@@ -36,7 +36,7 @@ const Input = ({value, onChange, placeholder, label, type}) => {
 
                     <>
                 
-                    (showPassword ? (
+                    {showPassword ? (
 
                         <FaRegEyeSlash
 
@@ -48,11 +48,11 @@ const Input = ({value, onChange, placeholder, label, type}) => {
                         <FaRegEye
 
                             size={22}
-                            className="text-primary cursor-pointer"
+                            className="text-slate-400 cursor-pointer"
                             onClick={() => toggleShowPassword()}
                         />
                             
-                    ))
+                    )}
 
                     </>
                 )}

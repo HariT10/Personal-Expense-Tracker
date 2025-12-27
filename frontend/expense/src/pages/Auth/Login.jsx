@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 
 import Input from "../../components/Inputs/Input";
 
+import { Link } from 'react-router-dom';
+
 const Login = () => {
 
     const [email, setEmail] = useState("");
@@ -19,7 +21,34 @@ const Login = () => {
 
     //hanling the login form part
 
-    const handleLogin = async (e) => {}
+    const handleLogin = async (e) => {
+
+
+        e.preventDefault();
+
+        
+        
+
+
+        if(!validateEmail(email)){
+            setError("Please enter a valid email address");
+            return;
+        }
+
+        if(!password){
+            setError("Please enter your password");
+            return;
+        }
+
+        setError("");
+
+        //LOGIN API CALL
+
+
+
+
+
+    }
 
 
     return(
@@ -70,12 +99,33 @@ const Login = () => {
 
                     {/*for submit and if you dont have a account*/}
 
-                    
+                    {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
+
+
+                    <button type = "submit" className="button-primary">
+
+                        Login
+
+                    </button>
+
+                    <p className="text-[13px] text-slate-800 mt-3">
+
+                        Do not have an account?{""}
+
+                        <Link className = "font-medium text-primary underline" to="/signup">
+
+                            SignUp
+                        
+                        </Link>
+
+
+                    </p>
+
+
 
 
                     
-                    
-                   
+ 
 
 
                 </form>
