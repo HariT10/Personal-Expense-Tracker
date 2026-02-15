@@ -2,7 +2,7 @@ import React from 'react'
 
 import { LuUtensils, LuTrendingUp, LuTrendingDown, LuTrash2 } from 'react-icons/lu';
 
-const TransactionInfoCard = ({title, icon, date, amount, type, hideDeleteButton}) => {
+const TransactionInfoCard = ({title, icon, date, amount, type, hideDeleteButton, onDelete}) => {
 
 
     const getAmountColor = () => {
@@ -26,7 +26,7 @@ const TransactionInfoCard = ({title, icon, date, amount, type, hideDeleteButton}
 
                 {icon ? (
 
-                    <img src = {icon} alt = {titel} className = "" />
+                    <img src = {icon} alt = {title} className = "" />
 
                 ) : (
 

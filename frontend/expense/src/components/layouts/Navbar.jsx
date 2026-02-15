@@ -51,4 +51,4 @@ const Navbar = ({activeMenu}) => {
   );
 };
 
-export default Navbar; // 👈 YOU MISSED THIS
+export default Navbar; 

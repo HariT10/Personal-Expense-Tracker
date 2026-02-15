@@ -133,7 +133,7 @@ const SignUp = () => {
 
         <AuthLayout>
 
-            <div className= "lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
+            <div className= "lg:w-[70%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
 
                 <h3 className = "text-xl font-semibold text-black">Create an Account</h3>
 
@@ -171,7 +171,7 @@ const SignUp = () => {
 
                             label="Email Address"
 
-                            placeholder="harishan.thilak@gmail.com"
+                            placeholder="email.@gmail.com"
 
                             type="text"
 
@@ -189,7 +189,7 @@ const SignUp = () => {
 
                             label="Password"
 
-                            placeholder="Testing"
+                            placeholder="321!"
 
                             type="password"
 

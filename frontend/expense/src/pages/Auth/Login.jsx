@@ -107,7 +107,7 @@ const Login = () => {
 
                 <h3 className="text-xl font-semibold text-black">Welcome Back!</h3>
 
-                <h2>Welcome!</h2>
+         
 
                 <p className="text-xs text-slate-700 mt-[5px] mb-6"> Please Login Here</p>
 
@@ -123,7 +123,7 @@ const Login = () => {
 
                         label="Email Address"
 
-                        placeholder="harishan.thilak@gmail.com"
+                        placeholder="email.@gmail.com"
 
                         type="text"
 
@@ -138,7 +138,7 @@ const Login = () => {
 
                         label="Password"
 
-                        placeholder="Testing"
+                        placeholder="321!"
 
                         type="password"
 
@@ -157,7 +157,7 @@ const Login = () => {
 
                     <p className="text-[13px] text-slate-800 mt-3">
 
-                        Do not have an account?{""}
+                        Do not have an account? {""}
 
                         <Link className = "font-medium text-primary underline" to="/signup">
 

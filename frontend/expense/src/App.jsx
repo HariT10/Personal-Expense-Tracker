@@ -25,6 +25,11 @@ import Income from "./pages/Dashboard/Income";
 
 import Expense from "./pages/Dashboard/Expense";
 import UserProvider from './context/userContext';
+import { Toast } from 'bootstrap';
+
+
+
+import {Toaster} from 'react-hot-toast'
 
 const App = () => {
   //const [count, setCount] = useState(0)
@@ -59,11 +64,11 @@ const App = () => {
         </div>
 
 
+        <Toaster toastOption = {{className: "", style: {fontSize: '13px'},}} />
+
+
 
     </UserProvider>
-    
-
-
 
   );
 
