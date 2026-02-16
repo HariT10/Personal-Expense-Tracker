@@ -1,4 +1,7 @@
-export const BASE_URL = "http://localhost:8000";
+//export const BASE_URL = "http://localhost:8000";
+
+//changing the path url from local host to render for deployment
+export const BASE_URL = "https://personal-expense-tracker-fnc5.onrender.com"
 
 
 //utils/apiPath.js
