@@ -1,9 +1,9 @@
-//export const BASE_URL = "http://localhost:8000";
+export const BASE_URL = "http://localhost:8000";
 
 //changing the path url from local host to render for deployment
 //export const BASE_URL = "https://personal-expense-tracker-fnc5.onrender.com"
 
-export const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+//export const BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 //utils/apiPath.js
 
@@ -21,9 +21,6 @@ export const API_PATHS = {
 
         GET_DATA: "/api/v1/dashboard"
 
-
-
-
     },
 
 
@@ -34,7 +31,6 @@ export const API_PATHS = {
         DELETE_INCOME: (incomeId) => `/api/v1/income/${incomeId}`,
         DOWNLOAD_INCOME: "/api/v1/income/downloadExcel",
 
-
     },
 
 
@@ -44,7 +40,6 @@ export const API_PATHS = {
         GET_ALL_EXPENSE: "/api/v1/expense/get",
         DELETE_EXPENSE: (expenseId) => `/api/v1/expense/${expenseId}`,
         DOWNLOAD_EXPENSE: "/api/v1/expense/downloadExcel",
-
 
     },
 
